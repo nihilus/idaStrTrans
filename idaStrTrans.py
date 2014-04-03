@@ -30,7 +30,7 @@ def read_string(ea, coding=''):
         import chardet
         codepage = chardet.detect(s)
         print 'codepage may', codepage['encoding'], \
-               'confidence', codepage['confidence']
+              'confidence',   codepage['confidence']
         if codepage['confidence'] < 0.6:
             print 'Auto detect may not precise enough. Please give manually.'
             return
